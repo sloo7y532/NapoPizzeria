@@ -1,0 +1,80 @@
+.about {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.aboutTop {
+  width: 100%;
+  height: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.aboutBody {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+.aboutBottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  height: 66vh;
+}
+.aboutBottom p {
+  width: 90%;
+}
+.about .aboutBottom h1 {
+  font-weight: 400;
+  font-size: 70px;
+  color: black;
+  height: 30px;
+  padding-bottom: 30px;
+}
+.imgSide {
+  top: 12%;
+  left: 10%;
+  bottom: 5%;
+  width: 220px;
+  height: 76%;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (max-width: 768px) {
+  .about{
+    height: 80vh;
+  }
+  .aboutTop{
+    height: 20%;
+  }
+  .imgSide {
+    display: none;
+  }
+  .aboutBody {
+    display: flex;
+    flex: 80%;
+    justify-content: center;
+    align-items: flex-start;
+    height: 60%;
+  }
+  .aboutBottom{
+    justify-content: flex-start;
+    height: 20%;
+  }
+  .aboutBottom p {
+    width: 85vw;
+  }
+  .about .aboutBottom h1{
+    font-size: 50px;
+    position: relative;
+    top: 10%;
+  }
+}
